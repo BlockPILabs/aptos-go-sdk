@@ -23,6 +23,7 @@ type LedgerInfo struct {
 	OldestBlockHeight   string `json:"oldest_block_height"`
 	BlockHeight         string `json:"block_height"`
 	NodeRole            string `json:"node_role"`
+	GitHash             string `json:"git_hash"`
 }
 
 func (impl GeneralImp) LedgerInformation(ctx context.Context, opts ...interface{}) (*LedgerInfo, error) {
